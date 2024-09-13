@@ -1,0 +1,35 @@
+{
+    "name": "adnan_ashraf_portfolio",
+    "short_name": "adnan_ashraf_portfolio",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "I have developed a Flutter-based personal website to showcase my development skills and projects. Built with modern UI/UX principles, this project reflects my expertise in Flutter's cross-platform capabilities, offering a responsive experience on both mobile and web platforms. The portfolio highlights key projects, technical skills, and professional accomplishments, with smooth navigation and dynamic content management. It serves as a living resume, demonstrating my proficiency in state management, API integration, and front-end design, while providing an intuitive interface for potential employers and collaborators to explore my work.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

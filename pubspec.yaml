@@ -1,0 +1,36 @@
+name: adnan_ashraf_portfolio
+description: "I have developed a Flutter-based personal website to showcase my development skills and projects. Built with modern UI/UX principles, this project reflects my expertise in Flutter's cross-platform capabilities, offering a responsive experience on both mobile and web platforms. The portfolio highlights key projects, technical skills, and professional accomplishments, with smooth navigation and dynamic content management. It serves as a living resume, demonstrating my proficiency in state management, API integration, and front-end design, while providing an intuitive interface for potential employers and collaborators to explore my work."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.7.0
+  url_launcher: ^6.3.0
+  photo_view: ^0.15.0
+  get: ^4.6.6
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
