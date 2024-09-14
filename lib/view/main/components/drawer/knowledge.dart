@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../../config/constants.dart';
 
-class KnowledgeText extends StatelessWidget {
-  const KnowledgeText({super.key, required this.knowledge});
-  final String knowledge;
+class Knowledge extends StatelessWidget {
+  const Knowledge({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: defaultPadding/2),
-      child: Row(
-        children: [
-          SvgPicture.asset('assets/icons/check.svg'),
-          SizedBox(width: defaultPadding/2,),
-          Text(knowledge),
-        ],
-      ),
-    );
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      const Padding(padding: EdgeInsets.symmetric(vertical: 10), child: Text('Knowledge', style: TextStyle(color: Colors.white))),
+      knowledgeText('Flutter'),
+      knowledgeText(' Dart'),
+      knowledgeText(' OOP'),
+      knowledgeText('Git, Github')
+    ]);
   }
 }
 
+Widget knowledgeText(knowledge) {
+  return Padding(
+      padding: const EdgeInsets.only(bottom: defaultPadding / 2),
+      child: Row(children: [SvgPicture.asset('assets/icons/check.svg'), const SizedBox(width: defaultPadding / 2), Text(knowledge)]));
+}

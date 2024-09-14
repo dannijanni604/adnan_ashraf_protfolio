@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../certifications/certifications.dart';
-import '../intro/introduction.dart';
+import '../intro/components/intro_body.dart';
 import '../main/main_view.dart';
 import '../projects/project_view.dart';
 

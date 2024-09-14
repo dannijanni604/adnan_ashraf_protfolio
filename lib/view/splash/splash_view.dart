@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:adnan_ashraf_portfolio/config/app_images.dart';
 import 'package:flutter/material.dart';
 import '../../config/constants.dart';
 import '../../view/home/home.dart';
@@ -23,13 +22,12 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return const Scaffold(
         backgroundColor: bgColor,
         body: Center(
-            child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.center, children: [
-              Image.asset(AppImages.logo,width: 200),
-          const SizedBox(height: defaultPadding),
-          const AnimatedLoadingText(),
-        ])));
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [SizedBox(height: defaultPadding), AnimatedLoadingText()])));
   }
 }

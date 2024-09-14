@@ -6,8 +6,8 @@ import 'combine_subtitle.dart';
 import 'description_text.dart';
 import 'download_button.dart';
 import 'headline_text.dart';
-class IntroBody extends StatelessWidget {
-  const IntroBody({super.key});
+class Introduction extends StatelessWidget {
+  const Introduction({super.key});
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.sizeOf(context);

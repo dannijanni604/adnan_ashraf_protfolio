@@ -1,23 +1,23 @@
+import 'package:adnan_ashraf_portfolio/config/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../../config/constants.dart';
 
 class ContactIcon extends StatelessWidget {
   const ContactIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(top: defaultPadding),
-      child: Row(
-        children: [
-          const Spacer(),
-          IconButton(onPressed: () {launchUrl(Uri.parse('https://linkedin.com/in/hamad-anwar'));}, icon: SvgPicture.asset('assets/icons/linkedin.svg')),
-          IconButton(onPressed: () {launchUrl(Uri.parse('https://github.com/hamad-anwar'));}, icon: SvgPicture.asset('assets/icons/github.svg')),
-          const Spacer(),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        IconButton(onPressed: () {
+          launchUrl(Uri.parse('https://linkedin.com/in/android-developers'));
+        }, icon: SvgPicture.asset(AppImages.linkedinSvg)),
+        IconButton(onPressed: () {
+          launchUrl(Uri.parse('https://github.com/dannijanni604'));
+        }, icon: SvgPicture.asset(AppImages.githubSvg)),
+      ],
     );
   }
 }
