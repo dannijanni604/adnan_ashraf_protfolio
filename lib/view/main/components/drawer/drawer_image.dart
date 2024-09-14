@@ -1,3 +1,4 @@
+import 'package:adnan_ashraf_portfolio/config/app_images.dart';
 import 'package:flutter/material.dart';
 import '../../../../config/constants.dart';
 
@@ -27,7 +28,7 @@ class DrawerImage extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
           child: Transform.rotate(
               angle: 0.1,
-              child: Image.asset('assets/images/profile.png',fit: BoxFit.cover,))),
+              child: Image.asset(AppImages.profile,fit: BoxFit.cover,))),
     );
   }
 }

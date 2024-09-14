@@ -1,3 +1,4 @@
+import 'package:adnan_ashraf_portfolio/config/app_images.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../config/constants.dart';
@@ -41,17 +42,18 @@ class MySKills extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AnimatedLinearProgressIndicator(percentage: 0.7, title: 'Flutter',image: 'assets/icons/flutter.png',),
-        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Dart',image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Firebase',image: 'assets/icons/firebase.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.85, title: 'Sqlite',image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.8, title: 'Responsive Design',image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Clean Architecture',image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.5, title: 'Bloc',image: 'assets/icons/bloc.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.93, title: 'Getx',image: 'assets/icons/dart.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Flutter',image: AppImages.flutter,),
+        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Dart',image: AppImages.dart),
+        AnimatedLinearProgressIndicator(percentage: 0.85, title: 'Firebase',image: AppImages.firebase),
+        AnimatedLinearProgressIndicator(percentage: 0.85, title: 'Sqlite',image: AppImages.dart),
+        AnimatedLinearProgressIndicator(percentage: 0.85, title: 'Responsive Design',image: AppImages.dart),
+        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Clean Architecture',image: AppImages.dart),
+        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Bloc',image: AppImages.bloc),
+        AnimatedLinearProgressIndicator(percentage: 0.93, title: 'GetX',image: AppImages.dart),
+        AnimatedLinearProgressIndicator(percentage: 0.9, title: 'Provider',image: AppImages.dart),
       ],);
   }
 }

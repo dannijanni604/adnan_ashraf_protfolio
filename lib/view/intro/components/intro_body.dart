@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import '../../../config/constants.dart';
 import '../../../view model/responsive.dart';
-import 'animated_texts_componenets.dart';
 import 'combine_subtitle.dart';
 import 'description_text.dart';
 import 'download_button.dart';
@@ -28,10 +27,6 @@ class IntroBody extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: size.width * 0.23,
-                    ),
-                    const AnimatedImageContainer(
-                      width: 150,
-                      height: 200,
                     ),
                   ],
                 ),
@@ -65,7 +60,7 @@ class IntroBody extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        if (Responsive.isDesktop(context)) const AnimatedImageContainer(),
+        // if (Responsive.isDesktop(context)) const AnimatedImageContainer(),
         const Spacer()
       ],
     );
