@@ -4,4 +4,5 @@ class AppUrls{
   static String linkedin='https://linkedin.com/in/android-developers';
   static String github='https://github.com/dannijanni604';
   static String whatsapp='https://wa.me/+923051110035';
+  static String upwork='https://wa.me/+923051110035';
 }
