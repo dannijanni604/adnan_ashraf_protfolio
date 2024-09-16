@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../config/constants.dart';
-import '../../view/home/home.dart';
-import '../../view/splash/componenets/animated_loading_text.dart';
+import '../../view/splash/components/animated_loading_text.dart';
+import '../home_view/home_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -16,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>  const HomeView()));
     });
   }
 

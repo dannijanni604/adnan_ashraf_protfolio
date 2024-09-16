@@ -26,7 +26,7 @@ class ProjectStack extends StatelessWidget {
               borderRadius: BorderRadius.circular(30),
               color: bgColor),
           duration: const Duration(milliseconds: 500),
-          child: ProjectDetail(index: index,),
+          child: ProjectDetail(index: index),
       ),
     );
   }
