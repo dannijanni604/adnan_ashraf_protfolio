@@ -20,12 +20,12 @@ class CertificateView extends StatelessWidget {
                 const TitleText(prefix: 'Certifications & ', title: 'License'),
                 const SizedBox(height: defaultPadding),
                 SizedBox(
-            height: MediaQuery.of(context).size.height*0.9,
+            height: MediaQuery.of(context).size.height*0.74,
             child: Responsive(
                 desktop: CertificateGrid(crossAxisCount: 2, ratio: 1.7),
-                extraLargeScreen: CertificateGrid(crossAxisCount: 4, ratio: 1.6),
-                largeMobile: CertificateGrid(crossAxisCount: 1, ratio: 1.8),
-                mobile: CertificateGrid(crossAxisCount: 1, ratio: 1.4),
+                extraLargeScreen: CertificateGrid(crossAxisCount: 4, ratio: 1),
+                largeMobile: CertificateGrid(crossAxisCount: 1, ratio: 1.4),
+                mobile: CertificateGrid(crossAxisCount: 1, ratio: 1.39),
                 tablet: CertificateGrid(ratio: 1.7, crossAxisCount: 2)))
               ]),
         ));

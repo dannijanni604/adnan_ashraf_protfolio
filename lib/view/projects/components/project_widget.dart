@@ -17,12 +17,15 @@ class ProjectWidget extends StatelessWidget {
       Expanded(
           child: InkWell(
               onTap: () => ImageViewer(context, projectList[index].image),
-              child: ClipRRect(borderRadius: BorderRadius.circular(30), child: Image.asset(projectList[index].image, fit: BoxFit.cover)))),
-      const SizedBox(width: defaultPadding),
+              child: ClipRRect(
+                  borderRadius: BorderRadius.circular(Responsive.isMobile(context) ? 20 : 30),
+                  child: Column(children: [
+                    SizedBox(height: Responsive.isMobile(context) ? 150 : size.width * 0.2, child: Image.asset(projectList[index].image, fit: BoxFit.cover))
+                  ])))),
+      SizedBox(width: Responsive.isMobile(context) ? defaultPaddingMobile : defaultPadding),
       Expanded(
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(projectList[index].name,
-            style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: Colors.white, fontWeight: FontWeight.bold), maxLines: 1, overflow: TextOverflow.ellipsis),
+        Text(projectList[index].name, style: Responsive.isMobile(context) ? projectMobileHeading : projectWebHeading, maxLines: 2, overflow: TextOverflow.ellipsis),
         Responsive.isMobile(context) ? const SizedBox(height: defaultPadding / 2) : const SizedBox(height: defaultPadding),
         Text(projectList[index].description,
             style: const TextStyle(color: Colors.grey, height: 1.5),
@@ -36,13 +39,14 @@ class ProjectWidget extends StatelessWidget {
                             ? 6
                             : 4,
             overflow: TextOverflow.ellipsis),
-        const SizedBox(height: defaultPadding),
+        SizedBox(height: Responsive.isMobile(context) ? defaultPaddingMobile : defaultPadding),
         Row(children: [
-          if (projectList[index].githubUrl.isNotEmpty) githubButton(githubUrl: projectList[index].githubUrl),
-          if (projectList[index].playStoreUrl.isNotEmpty) playStoreButton(playStoreUrl: projectList[index].playStoreUrl),
-          if (projectList[index].iosUrl.isNotEmpty) iosButton(iosUrl: projectList[index].iosUrl)
+          if (projectList[index].githubUrl.isNotEmpty) githubButton(context: context, githubUrl: projectList[index].githubUrl),
+          if (projectList[index].playStoreUrl.isNotEmpty) playStoreButton(context: context, playStoreUrl: projectList[index].playStoreUrl),
+          if (projectList[index].iosUrl.isNotEmpty) iosButton(context: context, iosUrl: projectList[index].iosUrl)
         ])
-      ]))
+      ])),
+      SizedBox(width: Responsive.isMobile(context) ? defaultPaddingMobile : defaultPadding),
     ]);
   }
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../config/constants.dart';
+import '../../../view model/responsive.dart';
 import '../controller/certificate_controller.dart';
 import '../model/certificate.dart';
 
@@ -21,10 +22,9 @@ class CertificateWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         child: AnimatedContainer(
             padding: const EdgeInsets.all(defaultPadding),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: bgColor),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(Responsive.isMobile(context) ? 20 : 30), color: bgColor),
             duration: const Duration(milliseconds: 500),
-            child: SingleChildScrollView(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(certificateList[index].name,
                   style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
                   maxLines: 2,
@@ -62,6 +62,6 @@ class CertificateWidget extends StatelessWidget {
                         SizedBox(width: 5),
                         Icon(CupertinoIcons.arrow_turn_up_right, color: Colors.white, size: 13)
                       ])))
-            ]))));
+            ])));
   }
 }

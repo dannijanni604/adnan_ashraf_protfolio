@@ -15,19 +15,11 @@ class ProjectsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SingleChildScrollView(
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                if (Responsive.isLargeMobile(context)) const SizedBox(height: defaultPadding),
-                const TitleText(prefix: 'Latest', title: 'Projects'),
-                const SizedBox(height: defaultPadding),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height*0.9,
-            child: Responsive(
-                desktop: projectAnimatedContainer(),
-                extraLargeScreen: projectAnimatedContainer(),
-                largeMobile: projectAnimatedContainer(),
-                mobile: projectAnimatedContainer(),
-                tablet: projectAnimatedContainer()))
-              ]),
-        ));
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      if (Responsive.isLargeMobile(context)) const SizedBox(height: defaultPadding),
+      const TitleText(prefix: 'Latest', title: 'Projects'),
+      if (!Responsive.isLargeMobile(context)) const SizedBox(height: defaultPadding),
+      SizedBox(height: MediaQuery.of(context).size.height *0.77, child: projectAnimatedContainer())
+    ])));
   }
 }

@@ -20,7 +20,7 @@ List<Certificate> certificateList = [
     organization: 'SOT (School of Technologies)',
     date: 'Sep 2022',
     skills: 'iOS App Development · Flutter · Flutter App Development · Mobile Application Development · Android App Development',
-    credential:  '',
+    credential:  'https://drive.google.com/file/d/1Ltm6WT2fkiCBauykb8OlaCe8bR8CXsIA/view?usp=sharing',
   ),
   Certificate(
     name: 'Android Application Development',
@@ -34,7 +34,7 @@ List<Certificate> certificateList = [
     organization: 'DigiSkills',
     date: 'JUL 2023',
     skills: 'Flutter . Clean Architecture',
-    credential:  '',
+    credential:  'https://drive.google.com/file/d/1wkJXOHtVrsejbJAHHMUR5uMAwjAt7ri8/view?usp=sharing',
   ),
   Certificate(
     name: 'The Fundamental of Digital Marketing',

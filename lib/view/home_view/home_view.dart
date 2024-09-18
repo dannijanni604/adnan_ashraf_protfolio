@@ -26,7 +26,8 @@ class HomeView extends StatelessWidget {
           child: Center(
               child: Column(children: [
             kIsWeb && !Responsive.isLargeMobile(context) ? const SizedBox(height: defaultPadding * 2) : const SizedBox(height: defaultPadding / 2),
-            const SizedBox(height: 80, child: TopNavigationBar()),
+                if(Responsive.isMobile(context))const SizedBox(height: defaultPadding),
+                const SizedBox(height: 80, child: TopNavigationBar()),
             if (Responsive.isLargeMobile(context)) const Row(children: [Spacer(), NavigationButtonList(), Spacer()]),
             Expanded(
                 flex: 9,
