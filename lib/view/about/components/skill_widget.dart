@@ -22,7 +22,8 @@ class SkillWidget extends StatelessWidget {
                 Row(children: [
                   Image.asset(image!, height: 33, width: 33, fit: BoxFit.cover),
                   const SizedBox(width: 10),
-                  Text(title, style: const TextStyle(color: Colors.white)),
+                  Expanded(flex: 10,
+                      child: Text(title, style: const TextStyle(color: Colors.white))),
                   const Spacer(),
                   Text('${(value * 100).toInt().toString()}%')
                 ]),

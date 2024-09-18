@@ -17,8 +17,10 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const CustomDrawer(),
         body: Row(children: [
-      const Expanded(flex: 2, child: CustomDrawer()),
+          kIsWeb && !Responsive.isLargeMobile(context) ?
+      const Expanded(flex: 2, child: CustomDrawer()):const SizedBox(),
       Expanded(
           flex: 5,
           child: Center(

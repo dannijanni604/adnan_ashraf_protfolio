@@ -15,7 +15,7 @@ class AnimatedDescriptionText extends StatelessWidget {
         builder: (context, value, child) {
           return Text(
               'I am capable of delivering high-quality cross-platform applications${Responsive.isLargeMobile(context) ? '\n' : ''} for Android, iOS, ${!Responsive.isLargeMobile(context) ? '\n' : ''}Web and Desktop, from design to deployment.',
-              maxLines: 2,
+              maxLines: 3,
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value));

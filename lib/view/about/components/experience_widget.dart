@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../config/constants.dart';
+import '../../../view model/responsive.dart';
 
 class ExperienceWidget extends StatelessWidget {
    ExperienceWidget({super.key, required this.index});
@@ -18,8 +19,8 @@ class ExperienceWidget extends StatelessWidget {
         onTap: () {},
         borderRadius: BorderRadius.circular(30),
         child: AnimatedContainer(
-            padding: const EdgeInsets.all(defaultPadding),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: bgColor),
+            padding:  EdgeInsets.all( Responsive.isMobile(context) ?defaultPadding/1.5:defaultPadding),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(Responsive.isMobile(context) ?15:30), color: bgColor),
             duration: const Duration(milliseconds: 500),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(experienceList[index].role,
@@ -47,7 +48,7 @@ class ExperienceWidget extends StatelessWidget {
                         style: const TextStyle(color: Colors.white),
                         children: [TextSpan(text: experienceList[index].endDate, style: const TextStyle(color: Colors.grey, overflow: TextOverflow.ellipsis))]))
               ],),
-              const SizedBox(height: defaultPadding),
+              // const SizedBox(height: defaultPadding),
             ])));
   }
 }

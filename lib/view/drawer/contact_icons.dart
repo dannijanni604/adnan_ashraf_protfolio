@@ -10,10 +10,10 @@ class ContactIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.linkedin)), icon: SvgPicture.asset(AppImages.linkedinSvg)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.github)), icon: SvgPicture.asset(AppImages.githubSvg)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.stacksOverflow)), icon: SvgPicture.asset(AppImages.stackOverflow)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.upwork)), icon: SvgPicture.asset(AppImages.upwork))
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.linkedin)), icon: SvgPicture.asset(AppImages.linkedinSvg,height: 30,)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.github)), icon: SvgPicture.asset(AppImages.githubSvg,height: 30,)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.stacksOverflow)), icon: Image.asset(AppImages.stackOverflow,height: 30,)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.upwork)), icon: Image.asset(AppImages.upwork,height: 30,))
     ]);
   }
 }

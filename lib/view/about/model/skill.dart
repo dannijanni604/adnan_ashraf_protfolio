@@ -9,13 +9,13 @@ class Skill {
 }
 
 List<Skill> skillsList = [
-  Skill(name: 'Cross-Platform Compatibility', percentage: 0.7, image: AppImages.flutter),
-  Skill(name: 'Bloc State Management', percentage: 0.7, image: AppImages.bloc),
+  Skill(name: 'Cross-Platform Compatibility', percentage: 0.8, image: AppImages.flutter),
+  Skill(name: 'Bloc State Management', percentage: 0.75, image: AppImages.bloc),
   Skill(name: 'Provider', percentage: 0.9, image: AppImages.flutter),
   Skill(name: 'GetX', percentage: 0.9, image: AppImages.getx),
   Skill(name: 'Riverpod', percentage: 0.4, image: AppImages.riverpod),
   Skill(name: "Serverpod APIs development", percentage: 0.4, image: AppImages.serverpod),
-  Skill(name: "Sqflite Offline Database", percentage: 0.4, image: AppImages.sqfLite),
+  Skill(name: "Sqflite Offline Database", percentage: 0.74, image: AppImages.sqfLite),
   Skill(name: "SSO Integration", percentage: 0.85, image: AppImages.sso),
   Skill(name: "Rest APIs", percentage: 0.9, image: AppImages.restApi),
   Skill(name: "Web APIs", percentage: 0.9, image: AppImages.webApi),
