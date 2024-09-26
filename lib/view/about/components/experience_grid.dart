@@ -4,7 +4,7 @@ import 'package:adnan_ashraf_portfolio/view/about/model/experience.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 
 class ExperienceGrid extends StatelessWidget {
   ExperienceGrid({super.key});

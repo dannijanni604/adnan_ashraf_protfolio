@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+  title: 'Adnan Ashraf | Flutter Developer Portfolio',
       debugShowCheckedModeBanner: false,
       theme:primaryTheme(context),
       home: const SplashView()

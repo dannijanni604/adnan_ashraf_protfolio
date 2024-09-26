@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 
 class ExperienceWidget extends StatelessWidget {
    ExperienceWidget({super.key, required this.index});

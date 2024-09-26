@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 
 class TitleText extends StatelessWidget {
   const TitleText({super.key, required this.prefix, required this.title});

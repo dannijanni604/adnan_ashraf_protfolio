@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import '../../config/constants.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 import 'components/combine_subtitle.dart';
 import 'components/description_text.dart';
 import 'components/download_button.dart';

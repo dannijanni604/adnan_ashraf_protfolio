@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 import '../../home_body/components/side_menu_button.dart';
 import 'whatsapp_button.dart';
 import 'navigation_button_list.dart';

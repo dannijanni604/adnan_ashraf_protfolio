@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../view model/controller.dart';
+import '../../controller.dart';
 
 class NavigationButtonList extends StatelessWidget {
   const NavigationButtonList({super.key});

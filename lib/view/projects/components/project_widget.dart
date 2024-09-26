@@ -2,7 +2,7 @@ import 'package:adnan_ashraf_portfolio/utils/custom_widgets/check_project_button
 import 'package:adnan_ashraf_portfolio/view/projects/components/image_viewer.dart';
 import 'package:flutter/material.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 import '../model/project.dart';
 
 class ProjectWidget extends StatelessWidget {

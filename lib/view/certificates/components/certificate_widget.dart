@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 import '../controller/certificate_controller.dart';
 import '../model/certificate.dart';
 

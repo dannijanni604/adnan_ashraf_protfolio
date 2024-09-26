@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 import '../controller/certificate_controller.dart';
 import '../model/certificate.dart';
 import 'certificate_widget.dart';

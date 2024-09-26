@@ -2,7 +2,7 @@ import 'package:adnan_ashraf_portfolio/view/projects/components/project_animated
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../config/constants.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 import '../../utils/custom_widgets/title_text.dart';
 import 'controller/project_controller.dart';
 

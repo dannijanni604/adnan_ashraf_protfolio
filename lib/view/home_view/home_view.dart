@@ -1,9 +1,9 @@
 import 'package:adnan_ashraf_portfolio/view/about/about_view.dart';
 import 'package:flutter/material.dart';
 import '../../config/constants.dart';
-import '../../view model/controller.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 import '../certificates/certificates_view.dart';
+import '../controller.dart';
 import '../drawer/drawer.dart';
 import '../home_body/home_body.dart';
 import '../projects/project_view.dart';

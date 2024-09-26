@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 
 class CombineSubtitleText extends StatelessWidget {
   const CombineSubtitleText({super.key});

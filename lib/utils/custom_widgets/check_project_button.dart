@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../config/app_images.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 
 Widget githubButton({required String githubUrl,required BuildContext context}) {
   return Container(

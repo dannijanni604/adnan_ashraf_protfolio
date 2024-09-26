@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/constants.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 import 'contact_icons.dart';
 import 'drawer_image.dart';
 import 'education.dart';

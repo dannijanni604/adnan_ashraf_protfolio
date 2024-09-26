@@ -2,7 +2,7 @@ import 'package:adnan_ashraf_portfolio/view/projects/components/project_widget.d
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../config/constants.dart';
-import '../../../view model/responsive.dart';
+import '../../../config/responsive.dart';
 import '../controller/project_controller.dart';
 import '../model/project.dart';
 

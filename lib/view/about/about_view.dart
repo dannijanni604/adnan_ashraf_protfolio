@@ -2,7 +2,7 @@ import 'package:adnan_ashraf_portfolio/view/about/components/experience_grid.dar
 import 'package:flutter/material.dart';
 import '../../config/const_strings.dart';
 import '../../config/constants.dart';
-import '../../view model/responsive.dart';
+import '../../config/responsive.dart';
 import '../../utils/custom_widgets/title_text.dart';
 import 'components/skill_widget.dart';
 import 'model/skill.dart';
