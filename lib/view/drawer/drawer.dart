@@ -12,13 +12,14 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth=MediaQuery.of(context).size.width;
     return Container(
       margin:  EdgeInsets.only(right:Responsive.isMobile(context)? 50:0),
         decoration: BoxDecoration(
             color: bgColorDark,
             border: const Border(right: BorderSide(color: Colors.amber, width: 2.0)), borderRadius: BorderRadius.circular(30)),
         child: Padding(
-            padding: const EdgeInsets.all(defaultPadding),
+            padding:  EdgeInsets.all(screenWidth>1000?defaultPadding:defaultPadding/1.6),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Center(
                   child: Column(children: [

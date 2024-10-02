@@ -9,11 +9,12 @@ class ContactIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   double screenHeight =MediaQuery.of(context).size.height;
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.linkedin)), icon: SvgPicture.asset(AppImages.linkedinSvg,height: 30,)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.github)), icon: SvgPicture.asset(AppImages.githubSvg,height: 30,)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.stacksOverflow)), icon: Image.asset(AppImages.stackOverflow,height: 30,)),
-      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.upwork)), icon: Image.asset(AppImages.upwork,height: 30,))
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.linkedin)), icon: SvgPicture.asset(AppImages.linkedinSvg,height: screenHeight*0.04)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.github)), icon: SvgPicture.asset(AppImages.githubSvg,height: screenHeight*0.04)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.stacksOverflow)), icon: Image.asset(AppImages.stackOverflow,height:screenHeight*0.04)),
+      IconButton(onPressed: () => launchUrl(Uri.parse(AppUrls.upwork)), icon: Image.asset(AppImages.upwork,height: screenHeight*0.04))
     ]);
   }
 }

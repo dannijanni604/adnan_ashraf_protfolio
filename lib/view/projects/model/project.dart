@@ -22,7 +22,7 @@ List<Project> projectList = [
     image: 'assets/images/cv_lab.jpg',
     iosUrl: 'https://apps.apple.com/pk/app/cv-lab/id6480534877',
     githubUrl: '',
-    playStoreUrl: '',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.crewdog.cvlab',
     description:
         "CV Lab is an advanced and user-friendly mobile application designed to help users create professional resumes and cover letters with ease. Developed by an experienced Flutter developer, the app offers a variety of customizable templates tailored for different industries and experience levels. CV Lab enables users to craft visually appealing and structured CVs, providing guidance and tools to highlight skills, achievements, and qualifications. Perfect for fresh graduates, experienced professionals, or those switching careers, the app ensures a polished and impactful presentation for both Android and iOS users.",
   ),
